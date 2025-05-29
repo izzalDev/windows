@@ -6,7 +6,7 @@ services:
       VERSION: "https://archive.org/download/ghost-spectre-windows-11/WIN11.PRO.21H2.SUPERLITE%2BCOMPACT.X64.%28WPE%29%20%281%29.ISO"
       MANUAL: "Y"
       RAM_SIZE: "8G"
-      CPU_CORES: "4"
+      CPU_CORES: "8"
     devices:
       - /dev/kvm
       - /dev/net/tun
