@@ -4,7 +4,6 @@ services:
     container_name: windows
     environment:
       VERSION: "https://archive.org/download/tiny-11-core-x-64-beta-1/tiny11%20core%20x64%20beta%201.iso"
-      MANUAL: "Y"
       RAM_SIZE: "12G"
       CPU_CORES: "8"
     devices:
