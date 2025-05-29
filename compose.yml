@@ -4,6 +4,7 @@ services:
     container_name: windows
     environment:
       VERSION: "https://archive.org/download/ghost-spectre-windows-11/WIN11.PRO.21H2.SUPERLITE%2BCOMPACT.X64.%28WPE%29%20%281%29.ISO"
+      MANUAL: "Y"
     devices:
       - /dev/kvm
       - /dev/net/tun
