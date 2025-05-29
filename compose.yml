@@ -4,7 +4,10 @@ services:
     container_name: windows
     environment:
       VERSION: "https://archive.org/download/ghost-spectre-windows-11/WIN11.PRO.21H2.SUPERLITE%2BCOMPACT.X64.%28WPE%29%20%281%29.ISO"
+      EDITION: "superlite"
       MANUAL: "Y"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -16,5 +19,4 @@ services:
       - 3389:3389/udp
     volumes:
       - ./windows:/storage
-    restart: always
-    stop_grace_period: 10m
+    stop_grace_period: 60m
