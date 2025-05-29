@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "11"
+      VERSION: "https://archive.org/download/tiny-11-core-x-64-beta-1/tiny11%20core%20x64%20beta%201.iso"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -16,4 +16,4 @@ services:
     volumes:
       - ./windows:/storage
     restart: always
-    stop_grace_period: 2m
+    stop_grace_period: 10m
