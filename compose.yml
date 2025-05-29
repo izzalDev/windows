@@ -3,9 +3,9 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/ghost-spectre-windows-11/WIN11.PRO.21H2.SUPERLITE%2BCOMPACT.X64.%28WPE%29%20%281%29.ISO"
+      VERSION: "https://archive.org/download/tiny-11-core-x-64-beta-1/tiny11%20core%20x64%20beta%201.iso"
       MANUAL: "Y"
-      RAM_SIZE: "8G"
+      RAM_SIZE: "12G"
       CPU_CORES: "8"
     devices:
       - /dev/kvm
