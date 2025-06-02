@@ -3,9 +3,9 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "7u"
-      RAM_SIZE: "12G"
-      CPU_CORES: "8"
+      VERSION: "https://archive.org/download/windows-7-sp1-aio-x64-fully-updated/en_windows_7_sp1_aio_updated_2020_x64.iso"
+      RAM_SIZE: "16G"
+      CPU_CORES: "4"
     devices:
       - /dev/kvm
       - /dev/net/tun
